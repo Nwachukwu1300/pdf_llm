@@ -1,99 +1,62 @@
-# Technical Documentation Entity Recognition and Analysis
+# Technical Documentation Analysis Pipeline
 
-## Project Overview
-This project implements Named Entity Recognition (NER) for technical documentation analysis, specifically focusing on identifying and analyzing references to technical documents, system components, and related entities within infrastructure documentation.
+## Project Goal
+Development of a Large Language Model (LLM) specialized in technical documentation analysis and understanding.
 
-## Goals
-- Develop accurate NER patterns for technical document identification
-- Validate model performance against manual counts
-- Track document references across multiple technical specifications
-- Build foundation for technical documentation knowledge graph
-- Provide insights into document relationships and references
+## Current Phase: Building the Foundation
+### 1. Named Entity Recognition (NER)
+- Developing custom patterns to identify key technical entities
+- Validating accuracy against manual counts
+- Understanding entity occurrences and references
 
-## Key Components
+### 2. Relationship Extraction  
+- Identifying connections between technical documents
+- Capturing relationships between entities
+- Building structured relationships for knowledge representation
 
-### Entity Types
-- **TECH_DOC**: Technical document references (e.g., MCE0107B, TR 2043)
-- **SYSTEM_COMPONENT**: System identifiers (e.g., MIDAS, NMCS2)
-- **HARDWARE_COMPONENT**: Physical components (e.g., Cabinet Type 600, AMI)
-- **COMMUNICATION_COMPONENT**: Communication protocols (e.g., RS485, Ethernet LAN)
-- **SUBSYSTEM_COMPONENT**: Subsystem identifiers (e.g., Signal Subsystem)
-- **CONTROL_COMPONENT**: Control systems (e.g., Control System, CCTV System)
-- **SPECIFICATION_TYPE**: Document classifications (e.g., Requirements Document)
+### 3. Knowledge Graph Construction (Next Step)
+- Converting extracted entities to nodes
+- Using relationships as edges
+- Creating a structured network of technical knowledge
 
-### Features
-- Custom spaCy NER patterns for technical entity recognition
-- Case-insensitive matching with multiple format support
-- Accuracy validation against manual counts
-- Performance visualization across documents
-- Detailed error analysis including missed and extra matches
+## Implementation Progress
+Currently focused on NER development:
 
-## Implementation Details
+### Entity Types Identified
+- TECH_DOC (e.g., MCE0107B, TR 2043)
+- SYSTEM_COMPONENT (e.g., MIDAS, NMCS2)
+- HARDWARE_COMPONENT (e.g., Cabinet Type 600, AMI)
+- COMMUNICATION_COMPONENT (e.g., RS485, Ethernet LAN)
+- SUBSYSTEM_COMPONENT (e.g., Signal Subsystem)
+- CONTROL_COMPONENT (e.g., Control System)
+- SPECIFICATION_TYPE (e.g., Requirements Document)
 
-### Text Processing Pipeline
-1. PDF text extraction using pdfplumber
-2. Text cleaning and normalization
-3. Chunking for efficient processing
-4. Entity recognition using custom patterns
-
-### Pattern Matching
-- Handles various document code formats
-- Supports different spacing variations
+### Current Features
+- Custom spaCy NER patterns
 - Case-insensitive matching
-- Multiple entity type recognition
-
-### Validation System
-- Compares model findings against manual counts
-- Tracks missed and extra matches
-- Calculates accuracy metrics
-- Provides detailed performance analysis
+- Multiple format support
+- Accuracy validation
+- Performance visualization
 
 ## Requirements
+- Python 3.x
 - spaCy
 - pdfplumber
 - matplotlib
 - prettytable
 - numpy
 
+## Project Roadmap
+1. NER Development & Validation ← Current Stage
+2. Relationship Extraction
+3. Knowledge Graph Construction
+4. LLM Development
+
 ## Usage
-[Include code examples and usage instructions]
-
-## Project Structure
-```
-project/
-├── src/
-│   ├── preprocessing/
-│   │   ├── pdf_extraction.py
-│   │   └── text_cleaning.py
-│   ├── ner/
-│   │   ├── patterns.py
-│   │   └── entity_recognition.py
-│   └── validation/
-│       ├── accuracy_calculation.py
-│       └── visualization.py
-├── data/
-│   ├── pdfs/
-│   └── manual_counts/
-└── results/
-    ├── entity_counts/
-    └── visualizations/
-```
-
-## Future Developments
-- Integration with knowledge graph construction
-- Enhanced relationship extraction
-- Automated pattern refinement
-- Interactive visualization dashboard
-- Cross-document reference analysis
+[To be added as components are completed]
 
 ## Contributing
-[Include contribution guidelines]
+[Guidelines to be added]
 
 ## License
-[Include license information]
-
-Would you like me to:
-1. Add more technical details to any section?
-2. Include specific code examples?
-3. Expand on future developments?
-4. Add more structure details?
+[License information to be added]
