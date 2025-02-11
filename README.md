@@ -53,10 +53,10 @@ Currently focused on NER development:
 4. LLM Development
 
 ## Usage
-[To be added as components are completed]
+
 
 ## Contributing
 [Guidelines to be added]
 
 ## License
-[License information to be added]
+
