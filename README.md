@@ -22,14 +22,6 @@ Development of a Large Language Model (LLM) specialized in technical documentati
 ## Implementation Progress
 Currently focused on NER development:
 
-### Entity Types Identified
-- TECH_DOC (e.g., MCE0107B, TR 2043)
-- SYSTEM_COMPONENT (e.g., MIDAS, NMCS2)
-- HARDWARE_COMPONENT (e.g., Cabinet Type 600, AMI)
-- COMMUNICATION_COMPONENT (e.g., RS485, Ethernet LAN)
-- SUBSYSTEM_COMPONENT (e.g., Signal Subsystem)
-- CONTROL_COMPONENT (e.g., Control System)
-- SPECIFICATION_TYPE (e.g., Requirements Document)
 
 ### Current Features
 - Custom spaCy NER patterns
@@ -52,11 +44,4 @@ Currently focused on NER development:
 3. Knowledge Graph Construction
 4. LLM Development
 
-## Usage
-
-
-## Contributing
-[Guidelines to be added]
-
-## License
 
