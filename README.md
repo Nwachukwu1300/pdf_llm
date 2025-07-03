@@ -156,3 +156,6 @@ relationship_types = {
 - **Domain Specific**: Optimized for technical documentation patterns
 - **Manual Validation**: Relationship accuracy requires domain expert review
 - **Scalability**: Large document sets may require distributed processing
+
+# Contributions: 
+Mmesoma Nwachukwu. 2025 - Sole Developer, Researcher  
