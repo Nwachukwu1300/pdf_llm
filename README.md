@@ -1,4 +1,6 @@
-# Technical Document Knowledge Graph Project
+# Project I led during my placement at National Highways
+
+# Technical Document Knowledge Graph Project 
 
 ## Overview
 
@@ -158,4 +160,4 @@ relationship_types = {
 - **Scalability**: Large document sets may require distributed processing
 
 # Contributions: 
-Mmesoma Nwachukwu. 2025 - Sole Developer, Researcher  
+Mmesoma Nwachukwu. 2025 - Sole Developer, Researcher 
